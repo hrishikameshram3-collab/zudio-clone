@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Category Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="top-header">
+  <div class="logo">ZUDIO</div>
+</header>
+
+<section class="products">
+  <h2 class="section-title">Selected Products</h2>
+  <div id="product-list"></div>
+</section>
+
+<script src="js/script.js"></script>
+
+<script>
+  const key = localStorage.getItem("categoryKey");
+
+  if (key) {
+    const filtered = products.filter(p =>
+      p.name.toLowerCase().includes(key)
+    );
+    renderProductList(filtered.slice(0, 5));
+  }
+</script>
+
+</body>
+</html>

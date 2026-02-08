@@ -1,0 +1,528 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  color: #f7f4f4;
+}
+
+/* ================= HEADER ================= */
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  background-color: #000;
+  border-bottom: 1px solid #3a3737;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* ================= NAV ================= */
+.category-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.category-nav li {
+  cursor: pointer;
+  color: #ccc;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.category-nav li:hover {
+  color: #ff6a00;
+}
+
+/* ================= HEADER ACTIONS ================= */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#search {
+  padding: 7px 12px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+#cart-btn {
+  padding: 7px 14px;
+  background-color: #ff6a00;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Horizontal categories */
+.hero-categories {
+  display: flex;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.hero-categories span {
+  cursor: pointer;
+  font-size: 15px;
+  color: #ddd;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.hero-categories span:hover {
+  color: #fff;
+  border-color: red;
+}
+
+.sticker-strip {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.sticker {
+  width: 110px;
+  background: #1b1b1b;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.section-tagline {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 20px;
+}
+
+.category-tagline {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.category-tagline span {
+  color: #aaa;
+  font-size: 14px;
+}
+
+
+/* ================= CATEGORY BANNERS ================= */
+/* (Women banner only on women page, etc. – JS control) */
+.image-banner {
+  display: flex;
+  gap: 20px;
+  padding: 30px 40px;
+}
+
+.image-banner img {
+  width: 50%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
+
+
+/* ================= PRODUCTS SECTION ================= */
+
+.product-row {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.product-card {
+  min-width: 230px;
+  background: #1c1c1c;
+  border-radius: 14px;
+  padding: 15px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px; 
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.product-card h4 {
+  margin: 10px 0 5px;
+}
+
+.product-card button {
+  margin-top: 10px;
+  background: orange;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.products-section {
+  padding: 40px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+/* ================= PRODUCT GRID ================= */
+#product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+  will-change: tranform;
+}
+
+/* ================= PRODUCT CARD ================= */
+/* (Name + price + add to cart – change #4) */
+.product {
+  background-color: #111;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+  min-width: 250px;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.product p {
+  margin-top: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.product button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  background-color: #ff6a00;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Horizontal categories */
+.hero-categories {
+  display: flex;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.hero-categories span {
+  cursor: pointer;
+  font-size: 15px;
+  color: #ddd;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.hero-categories span:hover {
+  color: #fff;
+  border-color: red;
+}
+
+
+.hero {
+  padding: 60px 40px;
+  background: linear-gradient(120deg, #000, #111);
+}
+
+.hero h1 {
+  color: #e50914;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #ccc;
+  font-size: 18px;
+}
+
+/* ================= FOOTWEAR SECTION ================= */
+
+.footwear-front {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background: #000;
+}
+
+/* ===== MAIN FOOTWEAR BANNERS (Mens / Womens / Kids) ===== */
+
+.footwear-front .product-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footwear-front .product-card {
+  width: 280px;
+  background: #1c1c1c;
+  border-radius: 18px;
+  padding: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footwear-front .product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.4);
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.product-card h4 {
+  font-size: 17px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.product-card p {
+  color: #e63946;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* ================= SUB BANNERS (Mens / Womens / Kids) ================= */
+
+.Mens-sub-Banners,
+.Womens-sub-Banners,
+.Kids-sub-Banners {
+  display: none;
+  gap: 22px;
+  padding: 30px;
+  margin-top: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  background: #2b2626;
+  border-radius: 18px;
+}
+
+.Mens-sub-Banners img,
+.Womens-sub-Banners img,
+.Kids-sub-Banners img {
+  width: 100%;
+  height: 250px;        
+  object-fit: contain;  
+  background: #161515;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+/* scrollbar */
+.Mens-sub-Banners::-webkit-scrollbar,
+.Womens-sub-Banners::-webkit-scrollbar,
+.Kids-sub-Banners::-webkit-scrollbar {
+  height: 6px;
+}
+
+.Mens-sub-Banners::-webkit-scrollbar-thumb,
+.Womens-sub-Banners::-webkit-scrollbar-thumb,
+.Kids-sub-Banners::-webkit-scrollbar-thumb {
+  background: #e63946;
+  border-radius: 10px;
+}
+
+/* ===== SUB CATEGORY CARD ===== */
+
+.banner-card {
+  min-width: 220px;
+  max-width: 220px;
+  background: rgba(68, 64, 59, 0.5);
+  border-radius: 14px;
+  padding: 14px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.3);
+}
+
+.banner-card img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.banner-card h3 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.banner-card .price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 8px;
+}
+
+.banner-card button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.banner-card button:hover {
+  background: #e63946;
+}
+
+/* ================= PRODUCTS SECTION ================= */
+
+#product-list {
+  display: flex;
+  gap: 24px;
+  padding: 30px;
+  overflow-x: auto;
+}
+
+.product {
+  min-width: 220px;
+  background: #1e1e1e;
+  border-radius: 16px;
+  padding: 14px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.product p {
+  color: #e63946;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.product button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background: #e63946;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 250px) {
+  .footwear-front .product-row {
+    gap: 20px;
+  }
+
+  .footwear-front .product-card {
+    width: 90%;
+  }
+
+  .main-banner {
+    height: 200px;
+  }
+}
+
+
+/* ================= FOOTER ================= */
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .top-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .image-banner {
+    flex-direction: column;
+  }
+
+  .image-banner img {
+    width: 100%;
+    height: 220px;
+  }
+}
